@@ -6,8 +6,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="h-[120px] p-4 shadow-lg flex justify-center items-center w-full bg-white fixed top-0 z-50">
-      <div className="flex items-center w-[100%] md:w-[100%] lg:w-[80%] justify-between">
+    <div className="h-[120px] p-4 max-sm:p-0 shadow-lg flex justify-center  items-center w-[100%] bg-white fixed top-0 z-50">
+      <div className="flex items-center w-full max-sm:w-[100%] md:w-[100%]  justify-between ">
         {/* Logo */}
         <motion.a
         initial={{ opacity: 0, x: -20 }}

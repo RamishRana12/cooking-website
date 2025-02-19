@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 function Hero() {
   return (
     <div className="flex justify-center items-center w-full p-4 mt-16 ">
-      <div className="flex  justify-between items-center mt-5 w-[80%] max-lg:w-[90%] max-sm:flex-col max-sm:w-[100%] ">
+      <div className="flex  justify-center items-center mt-5 w-[100%] max-lg:w-[90%] max-sm:flex-col max-sm:w-[100%] ">
         {/* Text Section */}
         <div className="max-w-lg text-center max-md:text-left">
           <motion.h1 
@@ -54,7 +54,7 @@ function Hero() {
             transition={{ duration: 1,delay: 2.5 }}
             src={image}
             alt="Cooking"
-            className="h-[600px] w-[700px] max-lg:h-[500px] max-sm:w-[500px]  max-md:h-[400px] max-md:w-[100%] object-cover"
+            className="h-[600px] w-[700px] max-lg:h-[400px] max-sm:w-[500px] max-sm:h-[400px]  max-md:h-[400px] max-md:w-[100%] object-cover"
           />
         </div>
       </div>

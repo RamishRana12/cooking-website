@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 function Recipe() {
   return (
     <>
-    <div className='flex  justify-center items-center w-[100%] mt-[300px]'>
+    <div className='flex  justify-center items-center w-[100%] mt-[300px] max-sm:mt-[100px]'>
         <div className='flex justify-center  items-center w-[80%]  rounded-lg '>
       <div className='max-sm:hidden'>
         <motion.img 
@@ -15,11 +15,12 @@ function Recipe() {
       </div>
       <div className='w-[60%] max-sm:w-full '>
         <motion.div
+
           initial={{ opacity: 0, x: 70 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay:0.3 }}
           viewport={{once:true}}
-           className='flex  ' >
+           className='flex  max-sm:hidden' >
         <p className='text-center mr-3 text-lg text-orange-500 max-sm:ml-32'> c o o k </p>
         <p className='mr-3 text-lg text-orange-500 max-sm:text-center'>with</p>
         <p className='text-lg text-orange-500 max-sm:'>us</p>
@@ -28,7 +29,7 @@ function Recipe() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay:0.8}}
           viewport={{once:true}}
-           className='font-bold text-[50px] max-sm:text-[35px] max-sm:text-center '>cooking together with <br />the expert</motion.h1>
+           className='font-bold text-[50px] max-sm:text-[35px] max-sm:text-center max-sm:mt-6'>cooking together with <br />the expert</motion.h1>
          <motion.p
           initial={{ opacity: 0, x: 70 }}
           whileInView={{ opacity: 1, x: 0 }}

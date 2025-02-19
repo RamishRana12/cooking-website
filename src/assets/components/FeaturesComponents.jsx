@@ -25,7 +25,7 @@ const data = [
 
 export default function FeaturesComponents() {
   return (
-    <div className="flex flex-wrap justify-between max-sm:justify-center  w-[100%] ">
+    <div className="flex flex-wrap justify-center max-sm:justify-center  w-[100%] ">
       {data.map((item, i) => (
         <motion.div
           initial={{ opacity: 0 }}
@@ -33,7 +33,7 @@ export default function FeaturesComponents() {
           transition={{ duration: 0.3, delay: i * 0.3 }}
           viewport={{ once: true }}
           key={i}
-          className="relative w-[300px] mt-[100px] items-center max-sm:mt-[90px] bg-slate-100 flex justify-between flex-col shadow-2xl shadow-orange-500 rounded-2xl border-b-transparent p-8"
+          className="relative w-[300px] m-[35px]   items-center max-sm: bg-slate-100 flex justify-between flex-col shadow-2xl shadow-orange-500 rounded-2xl border-b-transparent p-8"
         >
           <div className="h-[120px] w-[120px] rounded-full -right-[-90px] absolute -top-14 overflow-hidden ">
             <img
