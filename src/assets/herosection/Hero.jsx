@@ -13,7 +13,7 @@ function Hero() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1,delay: 3.5 }}
-            className="text-[60px] md:text-[50px] max-sm:text-[40px] font-mono font-bold leading-tight"
+            className="text-[60px] md:text-[50px] max-sm:text-[30px] font-mono font-bold leading-tight"
           >
             Cook anything! <br /> with the experts
           </motion.h1>
