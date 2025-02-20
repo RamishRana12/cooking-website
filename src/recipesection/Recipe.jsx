@@ -5,8 +5,8 @@ function Recipe() {
   return (
     <>
     <div className='flex  justify-center items-center w-[100%] mt-[200px] max-sm:mt-[100px]'>
-        <div className='flex justify-between  items-center w-[100%] lg:w-[80%] max-sm:w-[80%] rounded-lg '>
-      <div className='max-sm:hidden'>
+        <div className='flex justify-between  items-center w-[100%] lg:w-[80%] max-sm:w-[80%] rounded-lg max-sm:flex-col '>
+      <div className='max-sm:'>
         <motion.img 
           initial={{ opacity: 0,  }}
           whileInView={{ opacity: 1,  }}

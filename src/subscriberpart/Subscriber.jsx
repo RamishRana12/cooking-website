@@ -49,7 +49,7 @@ function Subscriber() {
           viewport={{ once: true }}
           src="https://themewagon.github.io/chefs-kitchen-nextjs-free/images/Newsletter/soup.svg"
           alt="Newsletter Soup"
-          className=" h-[400px] max-sm:h-[150px] w-[500px] max-sm:w-[250px]"
+          className=" h-[400px] max-sm:h-[150px] w-[500px] max-sm:w-full "
         />
       </div>
     </div>
