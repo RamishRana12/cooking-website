@@ -4,42 +4,47 @@ import {motion} from "framer-motion";
 
 function Hero() {
   return (
-    <div className="flex justify-center items-center w-full p-4 mt-16 ">
-      <div className="flex  justify-center items-center mt-5 w-[100%] max-lg:w-[90%] max-sm:flex-col max-sm:w-[100%] ">
+    <div className="flex justify-center items-center w-full p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl mx-auto text-center md:text-left">
+        
         {/* Text Section */}
-        <div className="max-w-lg text-center max-md:text-left">
-          <motion.h1 
-          initial={{ opacity: 0, y: 2000 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-
-          className="text-[60px] max-lg:text-[50px] max-sm:text-[50px] max-md:text-[40px] font-bold leading-tight">
+        <div>
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-[60px] md:text-[50px] max-sm:text-[40px] font-serif font-bold leading-tight"
+          >
             Cook anything <br /> with the experts
           </motion.h1>
+          
           <motion.p
-          initial={{ opacity: 0, y: 2000 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1,delay: 0.5 }}
-          className="mt-6 mb-8 text-[20px] max-md:text-[18px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing  <br />
-            Non, illo? consectetur adipisicing elit. Non, illo?
-          </motion.p>
-          <div className="flex justify-center items-center space-x-4 max-md:flex-col max-md:space-x-0 max-md:space-y-4">
-            <motion.button
-            initial={{ opacity: 0, y: 2000 }}
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1,delay: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="mt-6 mb-8 text-lg md:text-[18px] max-sm:text-[15px]"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing. <br />
+            Non, illo? consectetur adipisicing. Non, illo?
+          </motion.p>
+
+          <div className="flex justify-center md:justify-start space-x-4 sm:flex-col sm:space-x-0 sm:space-y-4">
+            <motion.button
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 }}
               type="button"
-              className="btn btn-outline-danger rounded-full w-[200px] h-[60px] max-sm:hidden"
+              className="border border-orange-500 text-orange-500 px-6 py-3 rounded-full hover:bg-orange-500 hover:text-white transition hidden sm:inline-block"
             >
               Learn More
             </motion.button>
+
             <motion.button
-              initial={{ opacity: 0, y: 2000 }}
+              initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1,delay: 1.5 }}
+              transition={{ duration: 1, delay: 1.5 }}
               type="button"
-              className="btn btn-outline-danger rounded-full w-[200px] h-[60px]"
+              className="border border-red-500 text-red-500 px-6 py-3 rounded-full hover:bg-red-500 hover:text-white transition"
             >
               Get Started
             </motion.button>
@@ -47,16 +52,18 @@ function Hero() {
         </div>
 
         {/* Image Section */}
-        <div className="flex justify-center mt-6 max-md:w-full">
-          <motion.img
-            initial={{ opacity: 0,  }}
-            animate={{ opacity: 1,  }}
-            transition={{ duration: 1,delay: 2.5 }}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 2 }}
+          className="flex justify-center"
+        >
+          <img
             src={image}
             alt="Cooking"
-            className="h-[600px] w-[700px] max-lg:h-[400px] max-sm:w-[500px] max-sm:h-[400px]  max-md:h-[400px] max-md:w-[100%] object-cover"
+            className="w-full max-w-[700px] h-auto object-cover rounded-lg "
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

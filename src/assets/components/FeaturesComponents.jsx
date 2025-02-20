@@ -25,35 +25,37 @@ const data = [
 
 export default function FeaturesComponents() {
   return (
-    <div className="flex flex-wrap justify-center max-sm:justify-center  w-[100%] ">
-      {data.map((item, i) => (
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.3, delay: i * 0.3 }}
-          viewport={{ once: true }}
-          key={i}
-          className="relative w-[300px] m-[35px]   items-center max-sm: bg-slate-100 flex justify-between flex-col shadow-2xl shadow-orange-500 rounded-2xl border-b-transparent p-8"
-        >
-          <div className="h-[120px] w-[120px] rounded-full -right-[-90px] absolute -top-14 overflow-hidden ">
-            <img
-              src={item.img}
-              alt={item.title}
-              className="h-full w-full object-cover rounded-full"
-            />
-          </div>
-          <div className="flex justify-center items-center flex-col mt-[80px]">
-            <p className="text-center font-bold text-3xl mb-2">{item.title}</p>
-            <p className="text-gray-600 text-center">{item.description}</p>
-            <a
-              href="#"
-              className="text-orange-700 mt-2 font-bold text-xl hover:text-orange-900 hover:underline"
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6  w-full p-6">
+          {data.map((item,i) => (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay:i * 0.5 }}
+              viewport={{ once: true }}
+              key={i}
+              className="relative flex max-sm:mt-[80px]  justify-center flex-col h-[250px] items-center bg-slate-100 shadow-xl shadow-orange-500 rounded-2xl border p-6"
             >
-              Learn More
-            </a>
-          </div>
-        </motion.div>
-      ))}
-    </div>
-  );
-}
+              <div className="h-[100px] w-[100px] rounded-full absolute -top-10 overflow-hidden shadow-md">
+                <img
+                  src={item.img}
+                  alt={`Profile picture of ${item.title}`}
+                  className="h-full w-full object-cover rounded-full"
+                />
+              </div>
+              <div className="flex justify-center items-center flex-col text-center">
+                <p className="font-bold text-xl  font-serif">{item.title}</p>
+                <p className="text-gray-600">{item.description}</p>
+                <a
+                  href={item.link || "#"}
+                  className="text-orange-700  font-bold text-lg hover:text-orange-900 hover:underline"
+                  role="button"
+                >
+                  Learn More
+                </a>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      );
+    };
+

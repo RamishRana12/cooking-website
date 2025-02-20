@@ -5,7 +5,6 @@ import Hero from "./assets/herosection/Hero";
 function App() {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         

@@ -10,7 +10,7 @@ function Home() {
   return (
     <div>
       <Navbar/>
-      <div>
+      <div className=' m-auto w-full'>
       <Hero/>
       </div>
       <div className='mt-[100px]'>

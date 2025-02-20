@@ -74,7 +74,7 @@ function Gallery() {
       whileInView={{ opacity:1}}
       transition={{duration:1,delay:2}}
       viewport={{once:true}}
-      className="w-[80%] mx-auto py-10 px-4">
+      className="w-[100%] mx-auto py-10 px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols gap-[30px]">
           {galleryImages.map((item, i) => (
             <motion.div

@@ -4,8 +4,8 @@ import {motion} from "framer-motion";
 function Recipe() {
   return (
     <>
-    <div className='flex  justify-center items-center w-[100%] mt-[300px] max-sm:mt-[100px]'>
-        <div className='flex justify-center  items-center w-[80%]  rounded-lg '>
+    <div className='flex  justify-center items-center w-[100%] mt-[200px] max-sm:mt-[100px]'>
+        <div className='flex justify-between  items-center w-[100%] max-sm:w-[80%] rounded-lg '>
       <div className='max-sm:hidden'>
         <motion.img 
           initial={{ opacity: 0,  }}
@@ -25,20 +25,20 @@ function Recipe() {
         <p className='mr-3 text-lg text-orange-500 max-sm:text-center'>with</p>
         <p className='text-lg text-orange-500 max-sm:'>us</p>
         </motion.div >
-         <motion.h1  initial={{ opacity: 0, x: 70 }}
+         <motion.h1  initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay:0.8}}
           viewport={{once:true}}
            className='font-bold text-[50px] max-sm:text-[35px] max-sm:text-center max-sm:mt-6'>cooking together with <br />the expert</motion.h1>
          <motion.p
-          initial={{ opacity: 0, x: 70 }}
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay:1}}
           viewport={{once:true}}
            className='text-xl text-gray-500 max-sm:text-sm max-sm:mt-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum vel amet magnam inventore maxime suscipit, maiores nulla doloremque aperiam, accusamus veniam quidem autem aut at. Eaque fugiat est ut a
          Illum vel amet magnam inventore maxime suscipit, maiores nulla doloremque aperiam, accusamus veniam quidem autem aut at. Eaque fugiat est ut a Illum vel amet magnam inventore maxime suscipit, maiores nulla doloremque aperiam, accusamus veniam quidem autem aut at. Eaque fugiat est ut a.</motion.p>
          <motion.div 
-          initial={{ opacity: 0, x: 70 }}
+          initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay:1.2}}
           viewport={{once:true}}
@@ -59,20 +59,20 @@ function Recipe() {
          transition={{ delay:2,duration:1}}
          viewport={{once:true}}
         src="https://themewagon.github.io/chefs-kitchen-nextjs-free/images/cook/burger.png" alt=""
-        className='max-sm:w-[350px] '
+        className='max-sm:w-[350px] md:w-[400px] max-md:  '
       />
         </div>
         <div className=' w-full relative mt-[200px] max-sm:mt-[430px] '>
           <motion.p 
           initial={{ opacity:0 }}
           whileInView={{ opacity:1 }}
-          transition={{ delay:3}}
+          transition={{ delay:2}}
           viewport={{once:true}} 
           className='text-center text-orange-500 mt-[100px] '>E X P E R T<span className='ml-3'>C H E F S</span></motion.p>
           <motion.h1 
              initial={{ opacity:0 }}
              whileInView={{ opacity:1 }}
-             transition={{ delay:3}}
+             transition={{ delay:2}}
              viewport={{once:true}} 
           className='text-[40px] text-center font-bold'>let's  meet the expert</motion.h1>
           <div className='w-[100%] mt-[100px]'>

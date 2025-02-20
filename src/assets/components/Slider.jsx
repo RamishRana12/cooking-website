@@ -33,7 +33,7 @@ function Slider() {
     <motion.div 
     initial={{ opacity:0 }}
     whileInView={{ opacity:1 }}
-    transition={{ delay:4}}
+    transition={{ delay:3}}
     viewport={{once:true}}
        className="w-[80%] m-auto  px-4  ">
     <Swiper

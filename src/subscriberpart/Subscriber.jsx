@@ -3,49 +3,57 @@ import {motion} from "framer-motion";
 
 function Subscriber() {
   return (
-    <div className="w-[100%] flex justify-center items-center mt-[150px] ">
-      <div className="w-[90%] flex justify-between items-center bg-orange-300 rounded-full max-sm:flex-col relative  ">
-        <div className="p-36   ">
-          <motion.h1 
-          initial={{  opacity:0 }}
-          whileInView={{ opacity:1 }}
-          transition={{duration:1,delay:3}}
-          viewport={{once:true}}
-          className="text-white">NEWSLETTER</motion.h1>
-          <motion.h1 
-          initial={{  opacity:0 }}
-          whileInView={{ opacity:1 }}
-          transition={{duration:1,delay:3}}
-          viewport={{once:true}}
-          className="text-[50px] font-bold font-mono text-white  mb-5 max-sm:text-[40px]">
-            Subscribe our <br />
-            newsletter
-          </motion.h1>
-          <motion.input
-         initial={{  opacity:0 }}
-         whileInView={{ opacity:1 }}
-         transition={{duration:1,delay:3}}
-         viewport={{once:true}}
-            type="text"
-            placeholder="Enter your email"
-            className="w-[500px] h-[80px] rounded-full border-none outline-none px-2 max-sm:w-[300px] max-sm:h-[50px] "
-
-          />
-        </div>
-        <div className="relative max-sm:absolute max-sm:top-[450px] ">
-          <motion.img
-          initial={{  opacity:0 }}
-          whileInView={{ opacity:1,rotate:360 }}
-          transition={{duration:2,delay:1}}
-          viewport={{once:true}}
-            src="https://themewagon.github.io/chefs-kitchen-nextjs-free/images/Newsletter/soup.svg"
-            alt=""
-            className="max-sm:w-[300px] max-sm:h-[300px]"
-          />
+    <div className="w-full flex justify-center items-center mt-36  px-4 ">
+    <div className="w-[80%] max-sm:w-[80%] flex justify-between max-sm:h-[500px] max-sm:flex-col max-sm:justify-center items-center bg-orange-300 rounded-full p-28">
       
-        </div>
+      {/* Text & Input Section */}
+      <div className="flex flex-col p-10  max-sm:p-0 max-sm:mb-3 max-sm:mt-10">
+        
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          viewport={{ once: true }}
+          className="text-white text-lg max-sm:font-bold max-sm:mb-3 max-sm:text-center "
+        >
+          NEWS LETTER
+        </motion.h1>
+
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          viewport={{ once: true }}
+          className="text-[50px] max-sm:text-md max-sm:font-thin font-bold  text-white mb-5 max-sm:text-[30px]"
+        >
+          Subscribe to our <br /> newsletter
+        </motion.h1>
+
+        <motion.input
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 1 }}
+          viewport={{ once: true }}
+          type="text"
+          placeholder="Enter your email"
+          className="w-[400px] max-sm:w-[250px] h-16  rounded-full border-none outline-none px-6 text-lg shadow-md"
+        />
+      </div>
+
+      {/* Image Section */}
+      <div className="relative  max-sm:w-[200px]">
+        <motion.img
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, rotate: 360 }}
+          transition={{ duration: 2, delay: 2 }}
+          viewport={{ once: true }}
+          src="https://themewagon.github.io/chefs-kitchen-nextjs-free/images/Newsletter/soup.svg"
+          alt="Newsletter Soup"
+          className=" h-[400px] max-sm:h-[150px] w-[500px] max-sm:w-[250px]"
+        />
       </div>
     </div>
+  </div>
   );
 }
 
