@@ -23,8 +23,8 @@ function Home() {
       {showIntro && (
         <motion.div
           className="fixed top-0 left-0 w-full bg-orange-500 h-screen flex justify-center items-center origin-top"
-          initial={{ opacity: 1, scaleY: 1 }}
-          animate={{ opacity: 0, scaleY: 0 }}
+          initial={{ opacity: 1}}
+          animate={{ opacity: 0 }}
           transition={{ delay: 2, ease: 'easeInOut', duration: 1 }}
         >
           <motion.h1 className='text-[80px] font-bold flex items-center max-sm:text-[30px]'>
