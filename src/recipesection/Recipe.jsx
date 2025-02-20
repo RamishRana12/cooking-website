@@ -5,7 +5,7 @@ function Recipe() {
   return (
     <>
     <div className='flex  justify-center items-center w-[100%] mt-[200px] max-sm:mt-[100px]'>
-        <div className='flex justify-between  items-center w-[100%] max-sm:w-[80%] rounded-lg '>
+        <div className='flex justify-between  items-center w-[100%] lg:w-[80%] max-sm:w-[80%] rounded-lg '>
       <div className='max-sm:hidden'>
         <motion.img 
           initial={{ opacity: 0,  }}
@@ -29,7 +29,7 @@ function Recipe() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ delay:0.8}}
           viewport={{once:true}}
-           className='font-bold text-[50px] max-sm:text-[35px] max-sm:text-center max-sm:mt-6'>cooking together with <br />the expert</motion.h1>
+           className='font-bold text-[50px] max-sm:text-[35px] max-sm:text-center max-sm:mt-6'>cooking together <br /> with the expert</motion.h1>
          <motion.p
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}

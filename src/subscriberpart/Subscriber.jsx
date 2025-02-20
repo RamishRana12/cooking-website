@@ -3,7 +3,7 @@ import {motion} from "framer-motion";
 
 function Subscriber() {
   return (
-    <div className="w-full flex justify-center items-center mt-36  px-4 ">
+    <div className="w-full flex justify-center items-center mt-[100px]  px-4 ">
     <div className="w-[80%] max-sm:w-[80%] flex justify-between max-sm:h-[500px] max-sm:flex-col max-sm:justify-center items-center bg-orange-300 rounded-full p-28">
       
       {/* Text & Input Section */}
