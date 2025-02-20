@@ -38,7 +38,7 @@ function Slider() {
        className="w-[80%] m-auto  px-4  ">
     <Swiper
       modules={[Pagination, Autoplay]}
-      spaceBetween={30}
+      spaceBetween={10}
       slidesPerView={1}
       pagination={{ clickable: true }}
       autoplay={{ delay: 3000, disableOnInteraction: false }}

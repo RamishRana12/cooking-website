@@ -25,7 +25,7 @@ const data = [
 
 export default function FeaturesComponents() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6  w-full p-6">
+    <div className="grid grid-cols-1 max-sm:grid-cols-2 lg:grid-cols-4 gap-6  w-full p-6">
           {data.map((item,i) => (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -35,7 +35,7 @@ export default function FeaturesComponents() {
               key={i}
               className="relative flex max-sm:mt-[80px]  justify-center flex-col h-[250px] items-center bg-slate-100 shadow-xl shadow-orange-500 rounded-2xl border p-6"
             >
-              <div className="h-[100px] w-[100px] rounded-full absolute -top-10 overflow-hidden shadow-md">
+              <div className="h-[100px] w-[100px] max-sm:h-[80px] max-sm:w-[80px] rounded-full absolute -top-10 overflow-hidden shadow-md">
                 <img
                   src={item.img}
                   alt={`Profile picture of ${item.title}`}
@@ -43,8 +43,8 @@ export default function FeaturesComponents() {
                 />
               </div>
               <div className="flex justify-center items-center flex-col text-center">
-                <p className="font-bold text-xl  font-serif">{item.title}</p>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="font-bold text-xl  font-serif max-sm:text-[17px]">{item.title}</p>
+                <p className="text-gray-600 max-sm:text-[15px]">{item.description}</p>
                 <a
                   href={item.link || "#"}
                   className="text-orange-700  font-bold text-lg hover:text-orange-900 hover:underline"
