@@ -52,7 +52,11 @@ function Home() {
       )}
 
       {/* Navigation */}
-      <nav className="bg-white shadow-lg w-full p-4 fixed top-0 left-0 z-50">
+      <motion.div
+      initial={{ opacity: 0,  }}
+      animate={{ opacity: 1,  }}
+      transition={{ duration: 0.5, delay: 3 }}
+       className="bg-white shadow-lg w-full p-4 fixed top-0 left-0 z-50">
         <div className="mx-auto flex items-center justify-between">
           {/* Logo */}
           <motion.a
@@ -137,7 +141,7 @@ function Home() {
             ))}
           </motion.div>
         )}
-      </nav>
+      </motion.div>
 
       {/* Sections */}
       <div className="pt-[70px]"> {/* Adjusted for fixed navbar */}
